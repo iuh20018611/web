@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .double {
+        position: relative;
+        color: rgb(255, 66, 246);
+      }
+      .double::after {
+        content: 'Double Font';
+        position: absolute;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        top: 10px;
+        left: 6px;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+    "
+  >
+    <div style="box-shadow: 0 0 10px black; padding: 5px">
+      <div
+        style="
+          border: 1px solid black;
+          padding: 15px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 10px;
+          margin-bottom: 3px;
+        "
+      >
+        <span
+          style="text-shadow: -4px -4px 3px red, 4px 4px 3px rgb(255, 123, 0)"
+          >Colorful Style</span
+        >
+        <span style="background-color: #f084cf; color: rgb(111, 0, 255)"
+          >Inset Effect</span
+        >
+        <span class="double">Double Font</span>
+        <span
+          style="
+            background-image: linear-gradient(
+              to bottom,
+              rgb(255, 255, 255),
+              rgb(238, 255, 0)
+            );
+            color: transparent;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            text-indent: 1cm;
+          "
+          >Glossy Style</span
+        >
+        <span>Grunge Style</span>
+        <span
+          style="
+            background-color: #160283;
+            color: rgb(0, 119, 255);
+            text-shadow: 0 0 7px rgb(29, 74, 170), 0 0 10px rgb(7, 93, 204),
+              0 0 21px rgb(6, 93, 207);
+          "
+          >Neon Glow</span
+        >
+      </div>
+      <p
+        style="
+          text-align: center;
+          background-color: rgb(130, 10, 199);
+          margin: 0;
+          padding: 10px;
+          color: white;
+          font-weight: bold;
+        "
+      >
+        Cool CSS Text Effects
+      </p>
+    </div>
+  </body>
+</html>

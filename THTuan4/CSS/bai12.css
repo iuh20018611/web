@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-content {
+    margin: 100px 400px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    text-shadow: 0 0 5px #000, 0 0 10px rgb(65, 65, 65), 0 0 15px rgb(136, 136, 136);
+}
+
+p {
+    text-align: justify;
+}
+
+.rotate {
+    font-size: 1rem;
+    border: 1px solid #fff;
+    color: #fff;
+    position: absolute;
+    top: 7%;
+    left: -7%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    background: rgb(199, 30, 0);
+    padding: 10px 40px;
+}

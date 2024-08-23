@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .diva,
+      .divb,
+      .divc,
+      .divd,
+      .dive,
+      .divf,
+      .divg,
+      .divh,
+      .divi {
+        padding: 3rem;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 10px solid;
+        border-color: #85c226 #f7c200 #4493a0 #df127b;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .divb {
+        border-style: solid dotted groove double;
+      }
+      .divc {
+        border-width: 5px 10px 15px 20px;
+      }
+      .divd {
+        border-radius: 0px 30px 70px 20px;
+        box-shadow: 0 30px 70px 20px rgb(150, 89, 89);
+        -moz-box-shadow: 0 30px 70px 20px rgb(150, 89, 89);
+        -webkit-box-shadow: 0 30px 70px 20px rgb(150, 89, 89);
+      }
+      .dive {
+        border-width: 4px 30px 4px 30px;
+        border-style: groove ridge dashed groove;
+        border-color: #85c226;
+        border-radius: 100px 100px 0 0;
+        -moz-border-radius: 100px 100px 0 0;
+        -webkit-border-radius: 100px 100px 0 0;
+        width: 100px;
+      }
+      .divf {
+        border-color: orange;
+        border-radius: 20px;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        width: 100px;
+      }
+      .divg {
+        border-width: 0 12px 0 12px;
+        border-style: double;
+        border-color: violet;
+        border-radius: 40px 40px 60px 60px;
+        -moz-border-radius: 40px 40px 60px 60px;
+        -webkit-border-radius: 40px 40px 60px 60px;
+        width: 150px;
+      }
+      .divh {
+        border-color: #4493a0;
+        border-radius: 20px 100px 100px 20px;
+        -moz-border-radius: 20px 100px 100px 20px;
+        -webkit-border-radius: 20px 100px 100px 20px;
+        width: 150px;
+      }
+      .divi {
+        background: #85c226;
+        border-width: 4px 30px 4px 30px;
+        border-style: solid;
+        border-color: #56c6d9 #56c6d9 #fe2192 #fe2192;
+        border-radius: 0 120px 0 120px;
+        -moz-border-radius: 0 120px 0 120px;
+        -webkit-border-radius: 0 120px 0 120px;
+        width: 150px;
+      }
+      button {
+        width: 200px;
+        padding: 8px;
+        background-color: #428bca;
+        border-color: #357ebd;
+        color: #fff;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -khtml-border-radius: 10px;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        font-weight: 900;
+        font-size: 125%;
+        height: 70px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #4cbd35;
+        border-color: #289036;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="diva">
+      <span>a.</span>
+      <span>Here the top border is green in color,</span>
+      <span>right border is yellow ,</span>
+      <span>the bottom has blue</span>
+      <span> and lef border in pink in color.</span>
+    </div>
+    <div class="divb">
+      <span>b.</span>
+      <span>Here the top border is green in color,</span>
+      <span>right border is yellow ,</span>
+      <span>the bottom has blue</span>
+      <span> and lef border in pink in color.</span>
+    </div>
+    <div class="divc">
+      <span>c.</span>
+      <span>Here the top border is green in color,</span>
+      <span>right border is yellow ,</span>
+      <span>the bottom has blue</span>
+      <span> and lef border in pink in color.</span>
+    </div>
+    <div class="divd">
+      <span>d.</span>
+      <span>Here the top border is green in color,</span>
+      <span>right border is yellow ,</span>
+      <span>the bottom has blue</span>
+      <span> and lef border in pink in color.</span>
+    </div>
+    <div class="dive">
+      <span>e.</span>
+      Adv-Hemishpere
+    </div>
+    <div class="divf">
+      <span>f.</span>
+      Round Rectangle
+    </div>
+    <div class="divg">
+      <span>g.</span>
+      Advanced Round Rectangle
+    </div>
+    <div class="divh">
+      <span>h.</span>
+      Bullet
+    </div>
+    <div class="divi">
+      <span>i.</span>
+      Advanced Leaf
+    </div>
+    <button class="divj">Subcribe Now</button>
+  </body>
+</html>

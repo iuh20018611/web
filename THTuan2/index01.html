@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: auto;
+        }
+
+        .wrapper {
+            width: 1080px;
+            height: 800px;
+            background-color: antiquewhite;
+        }
+
+        header {
+            width: 1080px;
+            height: 150px;
+            background-color: rgb(81, 161, 231);
+        }
+
+        nav {
+            width: 1080px;
+            height: 50px;
+            background-color: rgb(85, 228, 180);
+        }
+
+        .content {
+            width: 1080px;
+            height: 500px;
+            background-color: rgb(175, 131, 216);
+        }
+
+        footer {
+            width: 1080px;
+            height: 100px;
+            background-color: rgb(226, 219, 77);
+        }
+
+        aside {
+            width: 40%;
+            height: 100%;
+            background-color: rgb(206, 159, 108);
+            float: left;
+        }
+
+        section {
+            width: 60%;
+            height: 100%;
+            background-color: rgb(241, 21, 241);
+            float: left;
+        }
+
+        .menu li {
+            width: 216px;
+            line-height: 50px;
+            background-color: rgb(234, 250, 215);
+            list-style: none;
+            text-indent: 10px;
+            float: left;
+            position: relative;
+
+        }
+
+        li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: blue;
+        }
+
+        li:hover {
+            background-color: blue;
+        }
+
+        li:hover>a {
+            color: yellow;
+            font-style: italic;
+        }
+
+        li .sub-menu {
+            display: none;
+            position: absolute;
+        }
+
+        li:hover>.sub-menu {
+            display: block;
+
+        }
+
+        li .sub-menu li:hover>.sub-menu {
+            top: 0px;
+            left: 216px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="iuh.edu.vn">HOME</a></li>
+                <li><a href="#">SERVICES</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">COMPUTER</a></li>
+                        <li><a href="#">CAFE</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">cat</a></li>
+                                <li><a href="#">viet</a></li>
+                                <li><a href="#">net</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MOBIPHONE</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">HELP</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <aside>
+
+            </aside>
+            <section>
+
+            </section>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>

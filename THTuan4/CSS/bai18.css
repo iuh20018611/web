@@ -1,0 +1,52 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    background-color: green;
+}
+
+.nav>li>a {
+    color: white;
+}
+
+.nav>li {
+    position: relative;
+    padding: 12px 24px;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+}
+
+.subnav li a {
+    color: white;
+}
+
+.subnav li {
+    background-color: green;
+}
+
+.nav li:hover .subnav {
+    display: block;
+    top: 42px;
+    left: -40px;
+}
+
+.subnav li {
+    padding: 10px 20px;
+}
+
+.nav li:hover,
+.nav li:hover>a {
+    color: yellow;
+    background-color: rgb(7, 197, 70);
+}

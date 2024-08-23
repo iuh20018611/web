@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/15_2.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form>
+      <h2>Contact Us</h2>
+
+      <fieldset>
+        <legend>How you found us:</legend>
+        <div class="mt-1">
+          <label class="select">How did you hear of us? </label>
+          <select name="" id="">
+            <option>Google</option>
+            <option>Facebook</option>
+            <option>Twitter</option>
+            <option>Github</option>
+          </select>
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <span>Newsletter</span>
+          <div style="display: flex; align-items: center">
+            <input type="checkbox" checked />
+            <p>
+              Ensure this box is checked if you would like to receive email
+              updates.
+            </p>
+          </div>
+        </div>
+      </fieldset>
+      <button typ="submit" class="mt-1">Send message</button>
+      <fieldset>
+        <legend>Contact Information</legend>
+        <div class="mt-1 form">
+          <label class="email">First name: </label>
+          <input type="text" required />
+        </div>
+        <div class="mt-1 form">
+          <label class="email">Last name: </label>
+          <input type="text" required />
+        </div>
+        <div class="mt-1 form">
+          <label class="email">E-mail: </label>
+          <input type="text" required />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Competition Question</legend>
+        <ul>
+          How tall is the Eiffel Tower in Paris, France?
+          <li>
+            <input type="radio" />
+            <span>584 ft</span>
+          </li>
+          <li>
+            <input type="radio" />
+            <span>784 ft</span>
+          </li>
+          <li>
+            <input type="radio" />
+            <span>984 ft</span>
+          </li>
+          <li>
+            <input type="radio" />
+            <span>1184 ft</span>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Tiebreaker Question</legend>
+        <p>In 25 words or less, say why you would like to win $10,000:</p>
+
+        <div class="mt-1 form">
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Enter competition</legend>
+        <button type="submit">Enter Competition</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

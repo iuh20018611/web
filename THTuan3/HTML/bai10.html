@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        position: relative;
+      }
+      .animated {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 100px;
+        left: 0;
+        background-color: #ffcc00;
+        animation: scroll 5s linear infinite;
+      }
+      @keyframes scroll {
+        to {
+          left: 100%;
+          transform: rotate(180deg);
+        }
+      }
+      @-webkit-keyframes scroll {
+        to {
+          left: 100%;
+          -webkit-transform: rotate(180deg);
+        }
+      }
+      @-moz-keyframes scroll {
+        to {
+          left: 100%;
+          -moz-transform: rotate(180deg);
+        }
+      }
+      @-o-keyframes scroll {
+        to {
+          left: 100%;
+          -o-transform: rotate(180deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animated"></div>
+  </body>
+</html>

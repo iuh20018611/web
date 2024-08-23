@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <form>
+      <div class="mt-1">
+        <label>Full name*: </label>
+        <input
+          type="text"
+          required
+          id="fullname"
+          name="fullname"
+          placeholder="firstname + lastname"
+        />
+      </div>
+      <div class="mt-1">
+        <label>Email Address*: </label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="EMAIL_ADDRESS"
+          required
+        />
+      </div>
+      <div class="mt-1">
+        <label>Select tour package*: </label>
+        <select name="tour" id="tour">
+          <option value="1">Hà Nội</option>
+          <option value="2">Hồ Chí Minh</option>
+          <option value="3">Đăk Lăk</option>
+          <option value="4">Cà mau</option>
+        </select>
+      </div>
+      <div class="mt-1">
+        <label>Arrival date*: </label>
+        <input type="text" id="date" name="date" placeholder="m/d/y" required />
+      </div>
+      <div class="mt-1">
+        <label>Number of Persons*: </label>
+        <input
+          type="text"
+          id="person"
+          name="person"
+          placeholder="UNKONW_TYPE"
+          required
+        />
+      </div>
+      <div class="mt-1">
+        <ul>
+          What would you want to avail?*
+          <li>
+            <span>Boarding</span>
+            <input type="checkbox" id="boarding" name="boarding" />
+          </li>
+          <li>
+            <span>Fooding</span>
+            <input type="checkbox" id="fooding" name="fooding" />
+          </li>
+          <li>
+            <span>Sight seeting</span>
+            <input type="checkbox" id="seeting" name="seeting" />
+          </li>
+        </ul>
+      </div>
+      <div class="mt-1">
+        <label>Discount Coupon code: </label>
+        <input
+          type="text"
+          id="code"
+          name="code"
+          placeholder="UNKONW_TYPE"
+          required
+        />
+      </div>
+      <div class="mt-1">
+        <label>Term and conditions* </label>
+        <ul style="display: flex">
+          <li style="margin-right: 1rem">
+            <input type="radio" />
+            <span>I agree</span>
+          </li>
+          <li>
+            <input type="radio" />
+            <span>I disagree</span>
+          </li>
+        </ul>
+      </div>
+      <button type="submit">Complete reservation</button>
+    </form>
+  </body>
+</html>
